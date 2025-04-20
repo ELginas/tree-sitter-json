@@ -18,3 +18,9 @@ tree-sitter parse example_file --no-ranges
 ```
 
 Test out regexes at https://regex101.com/. Even though docs say it uses Rust regex, stick with default PCRE2 one.
+
+Test syntax highlighting:
+
+```sh
+tree-sitter highlight < example_file
+```
