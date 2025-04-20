@@ -6,6 +6,7 @@
 
 ```sh
 pnpm install
-echo 'hello' > example_file
+tree-sitter generate
 tree-sitter parse example_file
+tree-sitter test
 ```

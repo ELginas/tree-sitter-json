@@ -1,0 +1,13 @@
+==================
+Basic test
+==================
+
+{"a":"hello"}
+
+---
+
+(source_file
+  (dictionary
+    (field
+      key: (string)
+      value: (string))))

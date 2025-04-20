@@ -11,7 +11,9 @@ module.exports = grammar({
   name: "json",
 
   rules: {
-    // TODO: add the actual grammar rules
-    source_file: $ => "hello"
-  }
+    source_file: ($) => $.dictionary,
+    string: () => /"[a-zA-Z]+"/,
+    field: ($) => seq(field("key", $.string), ":", field("value", $.string)),
+    dictionary: ($) => seq("{", $.field, "}"),
+  },
 });
