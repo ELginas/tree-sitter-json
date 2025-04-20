@@ -18,7 +18,8 @@ Numbers
 
 {
   "a": "hello",
-  "b": 25
+  "b": 25,
+  "c": 0.002
 }
 
 ---
@@ -28,6 +29,9 @@ Numbers
     (field
       key: (string)
       value: (string))
+    (field
+      key: (string)
+      value: (number))
     (field
       key: (string)
       value: (number))))

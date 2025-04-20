@@ -17,4 +17,4 @@ Generate expected results for test cases:
 tree-sitter parse example_file --no-ranges
 ```
 
-Test out regexes at https://regex101.com/ and tick Rust mode
+Test out regexes at https://regex101.com/. Even though docs say it uses Rust regex, stick with default PCRE2 one.
