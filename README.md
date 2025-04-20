@@ -1,5 +1,7 @@
 # tree-sitter-json
 
+Simple non-complete JSON tree-sitter implementation for learning purposes.
+
 ## Development
 
 [Tutorial](https://tree-sitter.github.io/tree-sitter/creating-parsers/1-getting-started.html)
