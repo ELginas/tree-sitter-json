@@ -26,3 +26,11 @@ Test syntax highlighting:
 ```sh
 tree-sitter highlight < example_file
 ```
+
+Playground is quite nice to quickly experiment with tree-sitter error handling. To run:
+
+```sh
+sudo pacman -S emscripten
+tree-sitter build --wasm
+tree-sitter playground
+```
