@@ -41,7 +41,7 @@
     },
     "string": {
       "type": "PATTERN",
-      "value": "\"[a-zA-Z]*\""
+      "value": "\"((\\\\[\\\\\"nrt])|[^\"\\\\])*\""
     },
     "field": {
       "type": "SEQ",

@@ -16,3 +16,5 @@ Generate expected results for test cases:
 ```sh
 tree-sitter parse example_file --no-ranges
 ```
+
+Test out regexes at https://regex101.com/ and tick Rust mode

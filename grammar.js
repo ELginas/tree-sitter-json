@@ -15,7 +15,7 @@ module.exports = grammar({
     _value: ($) => choice($.null, $.string, $.number, $.array, $.dictionary),
     null: () => "null",
     number: () => /[0-9]+/,
-    string: () => /"[a-zA-Z]*"/,
+    string: () => /"((\\[\\"nrt])|[^"\\])*"/,
     field: ($) => seq(field("key", $.string), ":", field("value", $._value)),
     dictionary: ($) =>
       seq("{", optional($.field), repeat(seq(",", $.field)), "}"),

@@ -102,3 +102,31 @@ Null
     (field
       key: (string)
       value: (string))))
+
+==================
+Strings
+==================
+
+{
+  "a": "hell9oąčęąčę",
+  "b": "",
+  "c": "abc0123",
+  "d\"": "h\"a\"\n"
+}
+
+---
+
+(source_file
+  (dictionary
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (string))))
