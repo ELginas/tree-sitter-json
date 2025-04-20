@@ -4,7 +4,7 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
@@ -33,6 +33,14 @@
         "required": true,
         "types": [
           {
+            "type": "dictionary",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           }
@@ -52,13 +60,29 @@
         {
           "type": "dictionary",
           "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
         }
       ]
     }
   },
   {
+    "type": ",",
+    "named": false
+  },
+  {
     "type": ":",
     "named": false
+  },
+  {
+    "type": "number",
+    "named": true
   },
   {
     "type": "string",

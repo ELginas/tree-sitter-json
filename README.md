@@ -10,3 +10,9 @@ tree-sitter generate
 tree-sitter parse example_file
 tree-sitter test
 ```
+
+Generate expected results for test cases:
+
+```sh
+tree-sitter parse example_file --no-ranges
+```

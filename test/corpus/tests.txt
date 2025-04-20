@@ -11,3 +11,23 @@ Basic test
     (field
       key: (string)
       value: (string))))
+
+==================
+Numbers
+==================
+
+{
+  "a": "hello",
+  "b": 25
+}
+
+---
+
+(source_file
+  (dictionary
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (number))))

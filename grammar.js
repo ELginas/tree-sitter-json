@@ -11,9 +11,11 @@ module.exports = grammar({
   name: "json",
 
   rules: {
-    source_file: ($) => $.dictionary,
+    source_file: ($) => $._value,
+    _value: ($) => choice($.dictionary, $.string, $.number),
+    number: () => /[0-9]+/,
     string: () => /"[a-zA-Z]+"/,
-    field: ($) => seq(field("key", $.string), ":", field("value", $.string)),
-    dictionary: ($) => seq("{", $.field, "}"),
+    field: ($) => seq(field("key", $.string), ":", field("value", $._value)),
+    dictionary: ($) => seq("{", $.field, repeat(seq(",", $.field)), "}"),
   },
 });
