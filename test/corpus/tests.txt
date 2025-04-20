@@ -31,3 +31,33 @@ Numbers
     (field
       key: (string)
       value: (number))))
+
+==================
+Arrays
+==================
+
+{
+  "a": "hello",
+  "b": 25,
+  "asd": [],
+  "wasd": ["a", 2]
+}
+
+---
+
+(source_file
+  (dictionary
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (number))
+    (field
+      key: (string)
+      value: (array))
+    (field
+      key: (string)
+      value: (array
+        (string)
+        (number)))))
