@@ -3,7 +3,7 @@ $(error Windows is not supported)
 endif
 
 LANGUAGE_NAME := tree-sitter-json
-HOMEPAGE_URL := https://github.com/tree-sitter/tree-sitter-json
+HOMEPAGE_URL := https://github.com/elginas/tree-sitter-json
 VERSION := 0.1.0
 
 # repository

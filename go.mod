@@ -1,4 +1,4 @@
-module github.com/tree-sitter/tree-sitter-json
+module github.com/elginas/tree-sitter-json
 
 go 1.22
 

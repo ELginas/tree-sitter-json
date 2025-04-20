@@ -2,7 +2,7 @@
   "name": "tree-sitter-json",
   "version": "0.1.0",
   "description": "Json grammar for tree-sitter",
-  "repository": "https://github.com/tree-sitter/tree-sitter-json",
+  "repository": "https://github.com/elginas/tree-sitter-json",
   "license": "MIT",
   "author": {
     "name": "elginas"
