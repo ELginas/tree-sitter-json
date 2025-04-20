@@ -61,3 +61,44 @@ Arrays
       value: (array
         (string)
         (number)))))
+
+==================
+Null
+==================
+
+{
+  "a": "hello",
+  "b": 25,
+  "asd": null,
+  "wasd": [
+    "a",
+    2
+  ],
+  "ooaa": 0,
+  "d": ""
+}
+
+---
+
+(source_file
+  (dictionary
+    (field
+      key: (string)
+      value: (string))
+    (field
+      key: (string)
+      value: (number))
+    (field
+      key: (string)
+      value: (null))
+    (field
+      key: (string)
+      value: (array
+        (string)
+        (number)))
+    (field
+      key: (string)
+      value: (number))
+    (field
+      key: (string)
+      value: (string))))

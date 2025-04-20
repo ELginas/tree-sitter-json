@@ -12,11 +12,13 @@ module.exports = grammar({
 
   rules: {
     source_file: ($) => $._value,
-    _value: ($) => choice($.dictionary, $.string, $.number, $.array),
+    _value: ($) => choice($.null, $.string, $.number, $.array, $.dictionary),
+    null: () => "null",
     number: () => /[0-9]+/,
-    string: () => /"[a-zA-Z]+"/,
+    string: () => /"[a-zA-Z]*"/,
     field: ($) => seq(field("key", $.string), ":", field("value", $._value)),
-    dictionary: ($) => seq("{", $.field, repeat(seq(",", $.field)), "}"),
+    dictionary: ($) =>
+      seq("{", optional($.field), repeat(seq(",", $.field)), "}"),
     array: ($) => seq("[", optional($._value), repeat(seq(",", $._value)), "]"),
   },
 });

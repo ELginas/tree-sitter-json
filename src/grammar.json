@@ -11,7 +11,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "dictionary"
+          "name": "null"
         },
         {
           "type": "SYMBOL",
@@ -24,8 +24,16 @@
         {
           "type": "SYMBOL",
           "name": "array"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "dictionary"
         }
       ]
+    },
+    "null": {
+      "type": "STRING",
+      "value": "null"
     },
     "number": {
       "type": "PATTERN",
@@ -33,7 +41,7 @@
     },
     "string": {
       "type": "PATTERN",
-      "value": "\"[a-zA-Z]+\""
+      "value": "\"[a-zA-Z]*\""
     },
     "field": {
       "type": "SEQ",
@@ -68,8 +76,16 @@
           "value": "{"
         },
         {
-          "type": "SYMBOL",
-          "name": "field"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "field"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "REPEAT",
